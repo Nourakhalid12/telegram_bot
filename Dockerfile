@@ -7,4 +7,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["python", "bot_railway.py"]
+RUN chmod +x start.sh
+
+CMD ["bash", "start.sh"]
